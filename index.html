@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growthlink Marketing Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4F46E5",
+                        secondary: "#6366F1",
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+    <style>
+        .whatsapp-btn {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <a href="https://wa.me/918931893177" target="_blank"
+        class="whatsapp-btn fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-all">
+        <i class="ri-whatsapp-fill text-2xl"></i>
+    </a>
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/e0bc0de17f7db1376f77c164960b5684.jpeg"
+                alt="Growthlink Marketing Solutions" class="h-16 w-auto" />
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="./index.html" data-readdy="true"
+                    class="text-gray-900 hover:text-primary transition-colors">Home</a>
+                <a href="./services/index.html" data-readdy="true"
+                    class="text-gray-900 hover:text-primary transition-colors">Services</a>
+                <a href="./aboutus/index.html" data-readdy="true"
+                    class="text-gray-900 hover:text-primary transition-colors">About Us</a>
+                <a href="./blogs/index.html" data-readdy="true"
+                    class="text-gray-900 hover:text-primary transition-colors">Blogs</a>
+                <button id="contactUsBtn"
+                    class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                    Contact Us
+                </button>
+            </nav>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section class="relative h-[600px] bg-cover bg-center flex items-center"
+            style="background-image: url('https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/5e9db62dd556cb052fb2f100f790ffcd.jpeg')">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl font-bold text-white mb-6">
+                        Transform Your Digital Presence
+                    </h1>
+                    <p class="text-xl text-white mb-8">
+                        We help businesses grow through strategic digital marketing
+                        solutions. From website creation to social media management, we've
+                        got you covered.
+                    </p>
+                    <div class="flex space-x-4">
+                         <a href="#contactSection"
+                        class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-opacity-90 transition-colors whitespace-nowrap inline-block">
+                        Get Started</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="ourSection" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Comprehensive digital marketing solutions tailored to your
+                        business needs
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 overflow-hidden rounded-xl transform transition-transform group-hover:scale-110">
+                            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/a2c2bcdd74c3aa0d2c13a344862eaa6b.jpeg"
+                                alt="Website Creation" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Website Creation</h3>
+                        <p class="text-gray-600 mb-6">
+                            Custom-built responsive websites that convert visitors into
+                            customers
+                        </p>
+                       
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 overflow-hidden rounded-xl transform transition-transform group-hover:scale-110">
+                            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/02c61ddf643b08d84d06e6cb3f7b40ff.jpeg"
+                                alt="Digital Branding" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Digital Branding</h3>
+                        <p class="text-gray-600 mb-6">
+                            Build a strong online presence with cohesive brand identity
+                        </p>
+                       
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 overflow-hidden rounded-xl transform transition-transform group-hover:scale-110">
+                            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/765b03d91ab0ee3213540ad5e3fb6d8a.jpeg"
+                                alt="Social Media Marketing" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Social Media Marketing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Engage your audience and grow your following across platforms
+                        </p>
+                        
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 overflow-hidden rounded-xl transform transition-transform group-hover:scale-110">
+                            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/8ea30c9751c921766e30298a2828ba75.jpeg"
+                                alt="SEO Services" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">SEO Services</h3>
+                        <p class="text-gray-600 mb-6">
+                            Boost your website ranking and visibility on search engines
+                        </p>
+                       
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 overflow-hidden rounded-xl transform transition-transform group-hover:scale-110">
+                            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/311342eecbb1538e0b9e5fe3cc361e88.jpeg"
+                                alt="Lead Generation" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Lead Generation</h3>
+                        <p class="text-gray-600 mb-6">
+                            Generate high-quality leads and convert them into loyal
+                            customers
+                        </p>
+                        
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 overflow-hidden rounded-xl transform transition-transform group-hover:scale-110">
+                            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/4147e62c829b82aeb1edcdb81e4a33d2.jpeg"
+                                alt="WhatsApp Marketing" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">WhatsApp Marketing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Engage customers through personalized WhatsApp marketing
+                            campaigns
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="https://readdy.ai/api/search-image?query=diverse%20team%20of%20Indian%20marketing%20professionals%20in%20a%20modern%20office%20setting%2C%20collaborative%20meeting%2C%20discussing%20digital%20marketing%20strategy%2C%20professional%20attire%2C%20natural%20lighting&width=800&height=600&seq=2&orientation=landscape"
+                            alt="About Us" class="rounded-lg shadow-lg" />
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl font-bold mb-6">
+                            About Growthlink Marketing Solutions
+                        </h2>
+                        <p class="text-gray-600 mb-8">
+                            We are a team of passionate digital marketers committed to
+                            helping businesses thrive in the digital landscape. With years
+                            of experience and proven results, we deliver customized
+                            solutions that drive growth and ROI.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h3 class="text-3xl font-bold text-primary mb-2">500+</h3>
+                                <p class="text-gray-600">Happy Clients</p>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold text-primary mb-2">95%</h3>
+                                <p class="text-gray-600">Success Rate</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactSection" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+                    <p class="text-gray-600">
+                        Get in touch with us to discuss your digital marketing needs
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <form action="https://readdy.ai/api/form/d0rkn4tsc5d31noa4irg" method="POST" class="space-y-6">
+                            <div>
+                                <input type="text" name="name" placeholder="Your Name" maxlength="500"
+                                    class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                                    required />
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Your Email" maxlength="500"
+                                    class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                                    required />
+                            </div>
+                            <div>
+                                <textarea name="message" rows="4" placeholder="Your Message" maxlength="500"
+                                    class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="!rounded-button bg-primary text-white px-8 py-3 w-full hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Office Location</h3>
+                            <p class="text-gray-600">
+                                103, Vinodam Residency, Sudarshan Nagar<br />Serlingampally,
+                                Hyderabad 500019
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                            <p class="text-gray-600">
+                                Phone: +91 8931893177<br />Email: connect@growthlink.in
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+                            <p class="text-gray-600">
+                                Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM -
+                                2:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <img src="./assets/footer logo180x120.png"
+                        alt="Growthlink Marketing Solutions" class="h-16 mb-6" />
+                    <p class="text-gray-400">
+                        Transform your digital presence with our comprehensive marketing
+                        solutions.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="./index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                        </li>
+                        <li>
+                            <a href="./services/index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                        </li>
+                        <li>
+                            <a href="./aboutus/index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contactus/index.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Website Creation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Branding</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Social Media
+                                Marketing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">SEO Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Lead Generation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">WhatsApp Marketing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to our newsletter for updates and insights.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 rounded-l !rounded-none text-gray-900" />
+                        <button type="submit"
+                            class="!rounded-none !rounded-r bg-primary px-4 hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Growthlink Marketing Solutions. All rights reserved. |
+                    <a href="./privacy policy/index.html"
+                        data-readdy="true" class="hover:text-white transition-colors">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="contactDialog" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-semibold">Contact Us</h3>
+                <button id="closeDialog" class="text-gray-500 hover:text-gray-700">
+                    <i class="ri-close-line text-2xl"></i>
+                </button>
+            </div>
+            <form id="contactForm" action="https://readdy.ai/api/form/d0rkn4tsc5d31noa4irg" method="POST"
+                class="space-y-6">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Your Name" maxlength="500"
+                        class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                        required />
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Your Email" maxlength="500"
+                        class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                        required />
+                </div>
+                <div>
+                    <textarea name="message" id="message" rows="4" placeholder="Your Message" maxlength="500"
+                        class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                        required></textarea>
+                </div>
+                <button type="submit"
+                    class="!rounded-button bg-primary text-white px-8 py-3 w-full hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                    Send Message
+                </button>
+            </form>
+            <div class="mt-6 pt-6 border-t border-gray-200">
+                <div class="space-y-4 text-sm text-gray-600">
+                    <p>
+                        <i class="ri-map-pin-line mr-2"></i>103, Vinodam Residency,
+                        Sudarshan Nagar
+                    </p>
+                    <p><i class="ri-phone-line mr-2"></i>+91 8931893177</p>
+                    <p><i class="ri-mail-line mr-2"></i>connect@growthlink.in</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactBtn = document.getElementById("contactUsBtn");
+            const contactSection = document.getElementById("contactSection");
+            const contactDialog = document.getElementById("contactDialog");
+            const closeDialog = document.getElementById("closeDialog");
+            const contactForm = document.getElementById("contactForm");
+            contactBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                contactDialog.classList.remove("hidden");
+                contactDialog.classList.add("flex");
+            });
+            closeDialog.addEventListener("click", function () {
+                contactDialog.classList.add("hidden");
+                contactDialog.classList.remove("flex");
+            });
+            contactDialog.addEventListener("click", function (e) {
+                if (e.target === contactDialog) {
+                    contactDialog.classList.add("hidden");
+                    contactDialog.classList.remove("flex");
+                }
+            });
+            contactForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                const urlEncodedData = new URLSearchParams(formData).toString();
+                fetch("https://readdy.ai/api/form/d0rkn4tsc5d31noa4irg", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: urlEncodedData,
+                })
+                    .then((response) => {
+                        const dialog = document.createElement("div");
+                        dialog.className =
+                            "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50";
+                        dialog.innerHTML = `
+      <div class="bg-white rounded-lg p-6 max-w-sm w-full mx-4">
+      <p class="text-gray-800 mb-4">Thank you! Your message has been sent successfully.</p>
+      <button class="!rounded-button bg-primary text-white px-4 py-2 w-full">OK</button>
+      </div>
+      `;
+                        document.body.appendChild(dialog);
+                        dialog.querySelector("button").onclick = () => {
+                            dialog.remove();
+                            contactDialog.classList.add("hidden");
+                            contactDialog.classList.remove("flex");
+                            contactForm.reset();
+                            contactSection.scrollIntoView({ behavior: "smooth" });
+                        };
+                    })
+                    .catch((error) => {
+                        const dialog = document.createElement("div");
+                        dialog.className =
+                            "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50";
+                        dialog.innerHTML = `
+      <div class="bg-white rounded-lg p-6 max-w-sm w-full mx-4">
+      <p class="text-gray-800 mb-4">Sorry, there was an error sending your message. Please try again.</p>
+      <button class="!rounded-button bg-primary text-white px-4 py-2 w-full">OK</button>
+      </div>
+      `;
+                        document.body.appendChild(dialog);
+                        dialog.querySelector("button").onclick = () => dialog.remove();
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>

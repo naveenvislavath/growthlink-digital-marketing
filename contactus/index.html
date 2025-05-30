@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Growthlink Marketing Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#6366F1'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+     <a href="https://wa.me/918931893177" target="_blank"
+        class="whatsapp-btn fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-all">
+        <i class="ri-whatsapp-fill text-2xl"></i>
+    </a>
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/e0bc0de17f7db1376f77c164960b5684.jpeg"
+                alt="Growthlink Marketing Solutions" class="h-16 w-auto">
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="./../index.html"
+                    data-readdy="true" class="text-gray-900 hover:text-primary transition-colors">Home</a>
+                <a href="./../services/index.html"
+                    data-readdy="true" class="text-gray-900 hover:text-primary transition-colors">Services</a>
+                <a href="./../aboutus/index.html"
+                    data-readdy="true" class="text-gray-900 hover:text-primary transition-colors">About Us</a>
+                <a href="./../blogs/index.html"
+                    data-readdy="true" class="text-gray-900 hover:text-primary transition-colors">Blogs</a>
+                <a href="./../contactus/index.html" class="text-primary font-medium transition-colors">Contact Us</a>
+            </nav>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line text-xl"></i>
+            </button>
+        </div>
+    </header>
+    <main class="pt-16">
+        <section class="relative h-[300px] bg-cover bg-center flex items-center"
+            style="background-image: url('https://readdy.ai/api/search-image?query=modern%2520office%2520workspace%2520with%2520communication%2520concept%252C%2520contact%2520us%2520theme%252C%2520customer%2520service%2520desk%2520with%2520computers%2520and%2520phones%252C%2520professional%2520environment%2520with%2520soft%2520lighting%252C%2520clean%2520minimal%2520design%252C%2520blue%2520accent%2520colors%252C%2520business%2520communication%2520tools&width=1920&height=1080&seq=35&orientation=landscape')">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-5xl font-bold text-white mb-6">Contact Us</h1>
+                    <p class="text-xl text-white mb-8">We're here to help you grow your business. Reach out to our team
+                        for personalized marketing solutions.</p>
+                </div>
+            </div>
+        </section>
+        <div class="container mx-auto px-4 py-12">
+            <nav class="flex mb-12" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="./../contactus/index.html"
+                            data-readdy="true"
+                            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary">
+                            <i class="ri-home-line mr-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="ri-arrow-right-s-line text-gray-400"></i>
+                            <span class="ml-1 text-sm font-medium text-primary">Contact Us</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-2/3">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                        <p class="text-gray-600 mb-8">Fill out the form below and our team will get back to you within
+                            24 hours.</p>
+                        <form id="contactForm" action="https://readdy.ai/api/form/d0s93v70rqi1bojd7ec0" method="POST"
+                            enctype="application/x-www-form-urlencoded">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name
+                                        *</label>
+                                    <input type="text" id="name" name="name"
+                                        class="w-full px-4 py-3 rounded border-gray-200 border focus:border-primary focus:ring-1 focus:ring-primary"
+                                        required>
+                                    <div class="hidden text-red-500 text-sm mt-1" id="nameError">Please enter your name
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email
+                                        Address *</label>
+                                    <input type="email" id="email" name="email"
+                                        class="w-full px-4 py-3 rounded border-gray-200 border focus:border-primary focus:ring-1 focus:ring-primary"
+                                        required>
+                                    <div class="hidden text-red-500 text-sm mt-1" id="emailError">Please enter a valid
+                                        email address</div>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone
+                                        Number</label>
+                                    <input type="tel" id="phone" name="phone"
+                                        class="w-full px-4 py-3 rounded border-gray-200 border focus:border-primary focus:ring-1 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company
+                                        Name</label>
+                                    <input type="text" id="company" name="company"
+                                        class="w-full px-4 py-3 rounded border-gray-200 border focus:border-primary focus:ring-1 focus:ring-primary">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject
+                                    *</label>
+                                <select id="subject" name="subject"
+                                    class="w-full px-4 py-3 rounded border-gray-200 border focus:border-primary focus:ring-1 focus:ring-primary pr-8"
+                                    required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="services">Services Information</option>
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="partnership">Partnership Opportunities</option>
+                                    <option value="support">Customer Support</option>
+                                </select>
+                                <div class="hidden text-red-500 text-sm mt-1" id="subjectError">Please select a subject
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message
+                                    *</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-3 rounded border-gray-200 border focus:border-primary focus:ring-1 focus:ring-primary"
+                                    required></textarea>
+                                <div class="hidden text-red-500 text-sm mt-1" id="messageError">Please enter your
+                                    message</div>
+                            </div>
+                            <div class="mb-6">
+                                <label class="flex items-start">
+                                    <input type="checkbox" class="mt-1 mr-2" id="privacy" name="privacy" required>
+                                    <span class="text-sm text-gray-600">I agree to the <a href="#"
+                                            class="text-primary hover:underline">Privacy Policy</a> and consent to
+                                        having my data processed *</span>
+                                </label>
+                                <div class="hidden text-red-500 text-sm mt-1" id="privacyError">You must agree to the
+                                    privacy policy</div>
+                            </div>
+                            <button type="submit"
+                                class="!rounded-button bg-primary text-white px-8 py-3 hover:bg-opacity-90 transition-colors whitespace-nowrap flex items-center"
+                                id="submitButton">
+                                <span>Send Message</span>
+                                <i class="ri-send-plane-line ml-2"></i>
+                            </button>
+                            <div class="hidden bg-green-100 text-green-700 px-4 py-3 rounded mt-6" id="successMessage">
+                                Thank you for your message! We'll get back to you shortly.
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mt-16">
+                        <h2 class="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+                        <div class="space-y-4">
+                            <div class="border border-gray-200 rounded-lg">
+                                <button
+                                    class="flex justify-between items-center w-full px-6 py-4 text-left font-medium focus:outline-none"
+                                    id="faq1Button">
+                                    <span>What services does Growthlink Marketing Solutions offer?</span>
+                                    <i class="ri-add-line text-xl transition-transform" id="faq1Icon"></i>
+                                </button>
+                                <div class="px-6 pb-4 hidden" id="faq1Content">
+                                    <p class="text-gray-600">Growthlink Marketing Solutions offers a comprehensive suite
+                                        of digital marketing services including SEO, social media marketing, content
+                                        creation, email marketing, WhatsApp marketing, lead generation, website
+                                        development, and digital branding strategies tailored to your business needs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg">
+                                <button
+                                    class="flex justify-between items-center w-full px-6 py-4 text-left font-medium focus:outline-none"
+                                    id="faq2Button">
+                                    <span>How long does it take to see results from digital marketing efforts?</span>
+                                    <i class="ri-add-line text-xl transition-transform" id="faq2Icon"></i>
+                                </button>
+                                <div class="px-6 pb-4 hidden" id="faq2Content">
+                                    <p class="text-gray-600">Results vary depending on the strategies implemented and
+                                        your industry. SEO typically takes 3-6 months to show significant results, while
+                                        paid advertising and social media campaigns can generate quicker results. During
+                                        our initial consultation, we'll provide a realistic timeline based on your
+                                        specific goals.</p>
+                                </div>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg">
+                                <button
+                                    class="flex justify-between items-center w-full px-6 py-4 text-left font-medium focus:outline-none"
+                                    id="faq3Button">
+                                    <span>How much do your marketing services cost?</span>
+                                    <i class="ri-add-line text-xl transition-transform" id="faq3Icon"></i>
+                                </button>
+                                <div class="px-6 pb-4 hidden" id="faq3Content">
+                                    <p class="text-gray-600">Our pricing is customized based on your business needs,
+                                        goals, and the scope of services required. We offer flexible packages starting
+                                        from ₹25,000 per month for small businesses. Contact us for a personalized quote
+                                        tailored to your specific requirements.</p>
+                                </div>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg">
+                                <button
+                                    class="flex justify-between items-center w-full px-6 py-4 text-left font-medium focus:outline-none"
+                                    id="faq4Button">
+                                    <span>Do you work with businesses in specific industries?</span>
+                                    <i class="ri-add-line text-xl transition-transform" id="faq4Icon"></i>
+                                </button>
+                                <div class="px-6 pb-4 hidden" id="faq4Content">
+                                    <p class="text-gray-600">We work with businesses across various industries including
+                                        e-commerce, healthcare, education, technology, real estate, hospitality, and
+                                        professional services. Our team has specialized experience in these sectors,
+                                        allowing us to develop industry-specific strategies that drive results.</p>
+                                </div>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg">
+                                <button
+                                    class="flex justify-between items-center w-full px-6 py-4 text-left font-medium focus:outline-none"
+                                    id="faq5Button">
+                                    <span>What is your reporting process?</span>
+                                    <i class="ri-add-line text-xl transition-transform" id="faq5Icon"></i>
+                                </button>
+                                <div class="px-6 pb-4 hidden" id="faq5Content">
+                                    <p class="text-gray-600">We provide comprehensive monthly reports detailing the
+                                        performance of your marketing campaigns. These reports include key metrics,
+                                        analysis, and recommendations. Additionally, we schedule regular review meetings
+                                        to discuss results, address concerns, and adjust strategies as needed.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="lg:w-1/3">
+                    <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
+                        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-map-pin-line text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Our Office</h4>
+                                    <p class="text-gray-600">103, Vinodam Residency<br>Serlingampally, Hyderabad
+                                        500019<br>India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-phone-line text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Phone</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+918931893177" class="hover:text-primary">+91 89318 93177</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-mail-line text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <p class="text-gray-600">
+                                        <a href="mailto:connect@growthlink.in"
+                                            class="hover:text-primary">connect@growthlink.in</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-time-line text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Business Hours</h4>
+                                    <p class="text-gray-600">
+                                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                        Saturday: 10:00 AM - 2:00 PM<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-8 mb-8">
+                        <h3 class="text-xl font-bold mb-6">Connect With Us</h3>
+                        <div class="flex space-x-4 mb-6">
+                            <a href="https://www.facebook.com/share/1AGAa7Xgsq/?mibextid=wwXIfr"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white text-gray-600 rounded-full transition-colors">
+                                <i class="ri-facebook-fill text-xl"></i>
+                            </a>
+                            <a href="https://x.com/growthlink2025"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white text-gray-600 rounded-full transition-colors">
+                                <i class="ri-twitter-x-fill text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/106417199/admin/dashboard/"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white text-gray-600 rounded-full transition-colors">
+                                <i class="ri-linkedin-fill text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/growthlinkmarketingsolutions/"
+                                class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white text-gray-600 rounded-full transition-colors">
+                                <i class="ri-instagram-fill text-xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-600">Follow us on social media for the latest updates, marketing tips, and
+                            industry insights.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <div class="w-full">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.775491283335!2d78.3308759!3d17.470456500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4fd832ebe54c85a9%3A0xc39ede589dabd174!2sGrowthlink%20Marketing%20Solutions!5e0!3m2!1sen!2sin!4v1748537485550!5m2!1sen!2sin"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-4">Visit Our Office</h3>
+                            <p class="text-gray-600 mb-4">We're conveniently located in Serlingampally, Hyderabad,
+                                easily accessible by public transportation and with ample parking available.</p>
+                            <a href="https://maps.google.com/?q=Vinodam+Residency+Serlingampally+Hyderabad"
+                                target="_blank"
+                                class="inline-flex items-center text-primary font-medium hover:underline">
+                                Get Directions
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <img src="./../assets/footer logo180x120.png"
+                        alt="Growthlink Marketing Solutions" class="h-16 mb-6">
+                    <p class="text-gray-400">Transform your digital presence with our comprehensive marketing solutions.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="./../index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                        </li>
+                        <li><a href="./../services/index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                        </li>
+                        <li><a href="./../aboutus/index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li><a href="./../blogs/index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Blogs</a>
+                        </li>
+                        <li><a href="./../contactus/index.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Website Creation</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Branding</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Social Media
+                                Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">SEO Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Lead Generation</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">WhatsApp Marketing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates and insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 rounded-l !rounded-none text-gray-900 border-none">
+                        <button type="submit"
+                            class="!rounded-none !rounded-r bg-primary px-4 hover:bg-opacity-90 transition-colors whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Growthlink Marketing Solutions. All rights reserved.
+                     <a href="./../privacy policy/index.html"
+                        data-readdy="true" class="hover:text-white transition-colors">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script id="contactFormValidation">
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const subjectInput = document.getElementById('subject');
+            const messageInput = document.getElementById('message');
+            const privacyCheckbox = document.getElementById('privacy');
+            const submitButton = document.getElementById('submitButton');
+            const successMessage = document.getElementById('successMessage');
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const subjectError = document.getElementById('subjectError');
+            const messageError = document.getElementById('messageError');
+            const privacyError = document.getElementById('privacyError');
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                let isValid = true;
+                nameError.classList.add('hidden');
+                emailError.classList.add('hidden');
+                subjectError.classList.add('hidden');
+                messageError.classList.add('hidden');
+                privacyError.classList.add('hidden');
+                if (!nameInput.value.trim()) {
+                    nameError.classList.remove('hidden');
+                    isValid = false;
+                }
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailInput.value.trim())) {
+                    emailError.classList.remove('hidden');
+                    isValid = false;
+                }
+                if (!subjectInput.value || subjectInput.value === '') {
+                    subjectError.classList.remove('hidden');
+                    isValid = false;
+                }
+                if (!messageInput.value.trim()) {
+                    messageError.classList.remove('hidden');
+                    isValid = false;
+                }
+                if (messageInput.value.trim().length > 500) {
+                    messageError.textContent = 'Message must not exceed 500 characters';
+                    messageError.classList.remove('hidden');
+                    isValid = false;
+                }
+                if (!privacyCheckbox.checked) {
+                    privacyError.classList.remove('hidden');
+                    isValid = false;
+                }
+                if (isValid) {
+                    const originalButtonText = submitButton.innerHTML;
+                    submitButton.innerHTML = '<span>Sending...</span><i class="ri-loader-4-line ml-2 animate-spin"></i>';
+                    submitButton.disabled = true;
+                    try {
+                        const formData = new FormData(form);
+                        const selectedSubject = subjectInput.options[subjectInput.selectedIndex].text;
+                        formData.set('subject', selectedSubject);
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                            },
+                            body: new URLSearchParams(formData).toString()
+                        });
+                        if (response.ok) {
+                            form.reset();
+                            successMessage.classList.remove('hidden');
+                            setTimeout(() => successMessage.classList.add('hidden'), 5000);
+                        } else {
+                            throw new Error('Submission failed');
+                        }
+                    } catch (error) {
+                        successMessage.textContent = 'An error occurred. Please try again later.';
+                        successMessage.classList.remove('hidden');
+                        successMessage.classList.remove('bg-green-100', 'text-green-700');
+                        successMessage.classList.add('bg-red-100', 'text-red-700');
+                    } finally {
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.disabled = false;
+                    }
+                }
+            });
+            messageInput.addEventListener('input', function () {
+                const maxLength = 500;
+                const currentLength = this.value.length;
+                const messageError = document.getElementById('messageError');
+                if (currentLength > maxLength) {
+                    messageError.textContent = 'Message must not exceed 500 characters';
+                    messageError.classList.remove('hidden');
+                } else {
+                    messageError.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+    <script id="faqAccordion">
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqButtons = [
+                document.getElementById('faq1Button'),
+                document.getElementById('faq2Button'),
+                document.getElementById('faq3Button'),
+                document.getElementById('faq4Button'),
+                document.getElementById('faq5Button')
+            ];
+            const faqContents = [
+                document.getElementById('faq1Content'),
+                document.getElementById('faq2Content'),
+                document.getElementById('faq3Content'),
+                document.getElementById('faq4Content'),
+                document.getElementById('faq5Content')
+            ];
+            const faqIcons = [
+                document.getElementById('faq1Icon'),
+                document.getElementById('faq2Icon'),
+                document.getElementById('faq3Icon'),
+                document.getElementById('faq4Icon'),
+                document.getElementById('faq5Icon')
+            ];
+            faqButtons.forEach((button, index) => {
+                button.addEventListener('click', function () {
+                    const isOpen = !faqContents[index].classList.contains('hidden');
+                    // Close all FAQs
+                    faqContents.forEach(content => content.classList.add('hidden'));
+                    faqIcons.forEach(icon => {
+                        icon.classList.remove('transform', 'rotate-45');
+                        icon.classList.add('ri-add-line');
+                        icon.classList.remove('ri-subtract-line');
+                    });
+                    // Open clicked FAQ if it was closed
+                    if (!isOpen) {
+                        faqContents[index].classList.remove('hidden');
+                        faqIcons[index].classList.add('transform', 'rotate-45');
+                        faqIcons[index].classList.remove('ri-add-line');
+                        faqIcons[index].classList.add('ri-subtract-line');
+                    }
+                });
+            });
+        });
+    </script>
+    <script id="mobileMenu">
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('.md\\:hidden');
+            menuButton.addEventListener('click', function () {
+                alert('Mobile menu would open here');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+

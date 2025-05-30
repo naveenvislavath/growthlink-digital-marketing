@@ -1,0 +1,2 @@
+
+:where([class^="ri-"])::before { content: "\f3c2"; }
