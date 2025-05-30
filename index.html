@@ -64,28 +64,50 @@
         <i class="ri-whatsapp-fill text-2xl"></i>
     </a>
     <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/e0bc0de17f7db1376f77c164960b5684.jpeg"
-                alt="Growthlink Marketing Solutions" class="h-16 w-auto" />
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="./index.html" data-readdy="true"
-                    class="text-gray-900 hover:text-primary transition-colors">Home</a>
-                <a href="./services/index.html" data-readdy="true"
-                    class="text-gray-900 hover:text-primary transition-colors">Services</a>
-                <a href="./aboutus/index.html" data-readdy="true"
-                    class="text-gray-900 hover:text-primary transition-colors">About Us</a>
-                <a href="./blogs/index.html" data-readdy="true"
-                    class="text-gray-900 hover:text-primary transition-colors">Blogs</a>
-                <button id="contactUsBtn"
-                    class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-opacity-90 transition-colors whitespace-nowrap">
-                    Contact Us
-                </button>
-            </nav>
-            <button class="md:hidden w-10 h-10 flex items-center justify-center">
-                <i class="ri-menu-line text-xl"></i>
+    <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+        <img src="https://static.readdy.ai/image/4c54787fd2047152d108467e5113439e/e0bc0de17f7db1376f77c164960b5684.jpeg"
+            alt="Growthlink Marketing Solutions" class="h-16 w-auto" />
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="./index.html" class="text-primary  font-mediumtransition-colors">Home</a>
+            <a href="./services/index.html" class="text-gray-900 hover:text-primary transition-colors">Services</a>
+            <a href="./aboutus/index.html" class="text-gray-900 hover:text-primary transition-colors">About Us</a>
+            <a href="./blogs/index.html" class="text-gray-900 hover:text-primary transition-colors">Blogs</a>
+            <button id="contactUsBtn"
+                class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                Contact Us
             </button>
-        </div>
-    </header>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" class="md:hidden w-10 h-10 flex items-center justify-center">
+            <i class="ri-menu-line text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav id="mobileMenu" class="md:hidden bg-white px-4 pt-2 pb-4 hidden flex-col space-y-4 shadow-md">
+        <a href="./index.html" class="block text-primary  font-medium transition-colors">Home</a>
+        <a href="./services/index.html" class="block text-gray-900 hover:text-primary transition-colors">Services</a>
+        <a href="./aboutus/index.html" class="block text-gray-900 hover:text-primary transition-colors">About Us</a>
+        <a href="./blogs/index.html" class="block text-gray-900 hover:text-primary transition-colors">Blogs</a>
+        <button id="mobileContactBtn"
+            class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-opacity-90 transition-colors">
+            Contact Us
+        </button>
+    </nav>
+</header>
+
+<!-- Toggle Menu Script -->
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
 
     <main class="pt-16">
         <section class="relative h-[600px] bg-cover bg-center flex items-center"
