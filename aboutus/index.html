@@ -417,7 +417,7 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div>
-                        <form action="https://readdy.ai/api/form/d0rkn4tsc5d31noa4irg" method="POST" class="space-y-6">
+                        <form id="contactForm" action="https://readdy.ai/api/form/d0rkn4tsc5d31noa4irg" method="POST" class="space-y-6">
                             <div>
                                 <input type="text" name="name" placeholder="Your Name" maxlength="500"
                                     class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
@@ -425,6 +425,11 @@
                             </div>
                             <div>
                                 <input type="email" name="email" placeholder="Your Email" maxlength="500"
+                                    class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
+                                    required />
+                            </div>
+                             <div>
+                                <input type="tel" name="phone" placeholder="Your Phone Number" maxlength="15"
                                     class="w-full px-4 py-3 rounded border-gray-200 focus:border-primary focus:ring-primary"
                                     required />
                             </div>
@@ -542,6 +547,42 @@
     </script>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = {
+        name: contactForm.name.value,
+        email: contactForm.email.value,
+        phone: contactForm.phone.value,
+        message: contactForm.message.value
+      };
+
+      fetch("https://readdy.ai/api/form/d0rkn4tsc5d31noa4irg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      })
+        .then((response) => response.json())
+        .then((res) => {
+          console.log("Success:", res);
+
+          // Show success message
+          alert("Thank you! Your message has been sent.");
+          contactForm.reset();
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("There was an error sending your message. Please try again.");
+        });
+    });
+  });
+</script>
 
 </body>
 

@@ -665,65 +665,85 @@
         });
     </script>
 
-    <script id="form-validation-script">
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('consultationForm');
-            const messageTextarea = document.getElementById('message');
-            const charCount = document.getElementById('charCount');
-            const submitButton = form.querySelector('button[type="submit"]');
-            messageTextarea.addEventListener('input', function () {
-                const currentLength = this.value.length;
-                charCount.textContent = currentLength;
-                if (currentLength > 500) {
-                    this.value = this.value.substring(0, 500);
-                    charCount.textContent = 500;
+   <script id="form-validation-script">
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('consultationForm');
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        // Character count
+        messageTextarea.addEventListener('input', function () {
+            const currentLength = this.value.length;
+            charCount.textContent = currentLength;
+            if (currentLength > 500) {
+                this.value = this.value.substring(0, 500);
+                charCount.textContent = 500;
+            }
+        });
+
+        // Form submit
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!form.checkValidity()) return;
+
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Submitting...';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 }
-            });
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                if (!form.checkValidity()) {
-                    return;
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
                 }
-                const formData = new FormData(form);
-                const submitBtn = form.querySelector('button[type="submit"]');
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = 'Submitting...';
-                fetch(form.action, {
-                    method: 'POST',
-                    body: new URLSearchParams(formData),
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    }
-                })
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        const successMessage = document.createElement('div');
-                        successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg';
-                        successMessage.textContent = 'Thank you! Your consultation request has been submitted successfully.';
-                        document.body.appendChild(successMessage);
-                        form.reset();
-                        setTimeout(() => {
-                            successMessage.remove();
-                        }, 5000);
-                    })
-                    .catch(error => {
-                        const errorMessage = document.createElement('div');
-                        errorMessage.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded shadow-lg';
-                        errorMessage.textContent = 'Sorry, there was an error submitting your request. Please try again.';
-                        document.body.appendChild(errorMessage);
-                        setTimeout(() => {
-                            errorMessage.remove();
-                        }, 5000);
-                    })
-                    .finally(() => {
-                        submitBtn.disabled = false;
-                        submitBtn.innerHTML = 'Schedule Consultation';
-                    });
+
+                const successMessage = document.createElement('div');
+                successMessage.className = 'bg-green-500 text-white px-6 py-3 rounded shadow-lg mt-6 text-center';
+                successMessage.textContent = '✅ Thank you! Your consultation request has been submitted successfully.';
+
+                // Append message below the form
+                const container = document.getElementById("getstart");
+                container.appendChild(successMessage);
+
+                // Scroll to message
+                successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+
+                // Reset form
+                form.reset();
+
+                // Auto-remove message after 5 sec
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 5000);
+            })
+            .catch(error => {
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'bg-red-500 text-white px-6 py-3 rounded shadow-lg mt-6 text-center';
+                errorMessage.textContent = '❌ Sorry, there was an error submitting your request. Please try again.';
+
+                const container = document.getElementById("getstart");
+                container.appendChild(errorMessage);
+                errorMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+
+                setTimeout(() => {
+                    errorMessage.remove();
+                }, 5000);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Schedule Consultation';
             });
         });
-    </script>
+    });
+</script>
+
 
     <script id="custom-checkbox-script">
         document.addEventListener('DOMContentLoaded', function () {
